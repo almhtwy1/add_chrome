@@ -1,26 +1,9 @@
-// ==UserScript==
-// @name         Khamsat Categories
-// @namespace    https://khamsat.com/
-// @version      1.0
-// @description  تصنيف طلبات خمسات تلقائياً مع إمكانية التصفية حسب الفئة
-// @author       Your Name
-// @match        https://khamsat.com/community/requests*
-// @icon         https://khamsat.com/favicon.ico
-// @grant        none
-// @require      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js
-// ==/UserScript==
-
-(function() {
-    'use strict';
-
-    // Utility function for debouncing
-    const debounce = (fn, delay) => {
-        let timer;
-        return (...args) => {
-            clearTimeout(timer);
-            timer = setTimeout(() => fn(...args), delay);
-        };
-    };
+const addFontAwesome = () => {
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css';
+  document.head.appendChild(link);
+}
 
     // Categories configuration
     const categories = {
