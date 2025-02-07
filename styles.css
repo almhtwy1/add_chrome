@@ -1,0 +1,24 @@
+#cat-buttons {
+    margin-bottom: 15px;
+}
+.cat-btn {
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: .3s;
+    margin-bottom: 5px;
+}
+.cat-btn:hover {
+    transform: translateY(-2px);
+    opacity: .9;
+}
+.cat-btn i {
+    font-size: 13px;
+}

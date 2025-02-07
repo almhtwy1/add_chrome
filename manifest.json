@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "تحسينات خمسات", 
+    "version": "1.0",
+    "description": "إضافة تحسينات متعددة لموقع خمسات",
+    "permissions": ["activeTab"],
+    "content_scripts": [{
+      "matches": ["https://khamsat.com/community/requests*"],
+      "js": [
+        "Khamsat_Categories.js",
+        "comment_Text.js"
+      ],
+      "css": ["styles.css"]
+    }]
+   }
